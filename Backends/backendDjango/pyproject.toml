@@ -8,6 +8,7 @@ authors = ["Eduardo da Silva <eduardo.silva@gmail.com>"]
 python = "^3.9"
 django = "^3.1.5"
 djangorestframework = "^3.12.2"
+drf-spectacular = "^0.13.1"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^3.8.4"
