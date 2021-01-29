@@ -1,4 +1,8 @@
 {
     "python.pythonPath": "/home/eduardo/.cache/pypoetry/virtualenvs/fastapishoppingcart-B-aYuqvC-py3.9/bin/python",
-    "python.terminal.activateEnvInCurrentTerminal": false
+    "python.terminal.activateEnvInCurrentTerminal": false,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "python.formatting.provider": "black"
 }
