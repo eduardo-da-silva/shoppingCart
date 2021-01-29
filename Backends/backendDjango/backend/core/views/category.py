@@ -7,6 +7,3 @@ from backend.core.models import Category
 class CategoryViewSet(viewsets.ModelViewSet):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
-
-
-# Create your views here.
