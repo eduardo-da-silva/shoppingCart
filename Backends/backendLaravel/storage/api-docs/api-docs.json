@@ -1,0 +1,84 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Shopping Cart - Laravel",
+        "description": "Simple CRUD using Laravel",
+        "contact": {
+            "email": "eduardo.silva@gmail.com"
+        },
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/categories/": {
+            "get": {
+                "tags": [
+                    "Products"
+                ],
+                "summary": "Returns a list of categories",
+                "description": "Returns a object of categories",
+                "responses": {
+                    "200": {
+                        "description": "A list with categories"
+                    }
+                }
+            }
+        },
+        "/api/categories": {
+            "post": {
+                "tags": [
+                    "Products"
+                ],
+                "summary": "Crate new categories",
+                "description": "Create a new Category",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Category"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "CREATED"
+                    },
+                    "400": {
+                        "description": "Missing Data"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Category": {
+                "title": "Category",
+                "description": "Category List model",
+                "properties": {
+                    "id": {
+                        "title": "ID",
+                        "description": "ID",
+                        "type": "integer",
+                        "format": "int64",
+                        "example": 1
+                    },
+                    "description": {
+                        "title": "Description",
+                        "description": "Description of category",
+                        "type": "string",
+                        "example": "A nice category"
+                    }
+                },
+                "type": "object",
+                "xml": {
+                    "name": "Category"
+                }
+            }
+        }
+    },
+    "security": [
+        []
+    ]
+}

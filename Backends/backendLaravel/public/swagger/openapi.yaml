@@ -1,0 +1,11 @@
+openapi: 3.0.0
+paths:
+  /categories/:
+    get:
+      tags:
+        - Products
+      summary: 'Returns a list of categories'
+      description: 'Returns a object of categories'
+      responses:
+        '200':
+          description: 'A list with categories'
